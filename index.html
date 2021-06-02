@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xem bói</title>
+    <style>
+       body{
+           background-image: url(ảnh/anh1.png);
+           background-repeat: no-repeat;
+           background-position-x: center;
+           background-size: 650px;
+       }
+       table{
+           width: 650px;
+       }
+       #titleBoy{
+           text-align: left;
+       }
+       #titleGirl{
+           text-align: right;
+       }
+       #ageBoy{
+           text-align: center;
+       }
+       #ageGirl{
+           text-align: center;
+       }
+       button{
+           width: 100px;
+           border-color: white;
+       }
+    </style>
+</head>
+<body>
+    <center id="text"><h1>Kiểm tra độ hợp nhau</h1></center>
+    <center>
+        <table>
+            <tr>
+                <td id="titleBoy" ><h3>Nhập năm sinh bạn nam</h3></td>
+                <td width="250px"></td>
+                <td id="titleGirl"colspan="3"><h3>Nhập năm sinh bạn nữ</h3></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="yearBirthMale"></td>
+                <td></td>
+                <td><input typr="text" id="yearBirthFemale"></td>
+            </tr>
+            <tr height="70px">
+                <td >
+                    <h2 id="ageBoy"></h2>
+                </td>
+                <td></td>
+                <td>
+                    <h2 id="ageGirl"></h2>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <br><br><br><br><br><br><br><br><br><br>
+    <center><button onclick="check()">Xem</button></center>
+    <center><h1 id="CheckHopNhau"></h1></center>
+    <script src="my.js"></script>
+</body>
+</html>
